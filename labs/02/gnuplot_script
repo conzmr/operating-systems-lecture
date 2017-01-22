@@ -1,0 +1,8 @@
+set terminal jpeg
+set title "Number of files per directory"
+set xlabel "Directory"
+set ylabel "Number of files"
+set autoscale
+set xtics rotate
+set nokey
+plot 'data.dot' using (column(0)):2:xtic(1) ti col with boxes lt -1 lw 2 lc rgb '#990000' fillstyle pattern 2
